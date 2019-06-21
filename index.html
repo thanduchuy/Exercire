@@ -492,6 +492,8 @@
                     <a href="#">Xem chính sách sử dụng web</a>
             </div>
         </footer>
+        <div class='lentop' ><div id="back-to-top" class="back-to-top" data-toggle="tooltip" data-placement="left" title="Trở lên đầu trang" onclick="page_scroll2top()"><span class="glyphicon glyphicon-triangle-top"></span></div></div>
+        
 </body>
 <script>
     var slideIndex = 1;
@@ -521,5 +523,22 @@
         dots[slideIndex - 1].className += " w3-red";
     }
 </script>
-
+<script type="text/javascript">
+ 
+	$(window).scroll(function(){
+		if($(window).scrollTop() >= 10) {
+			$('.button_scroll2top').show();
+		} else {
+			$('.button_scroll2top').hide();
+		}
+	});
+	
+	function page_scroll2top(){
+		$('html,body').animate({
+			scrollTop: 0
+	    }, 'fast');
+	}
+	
+</script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 </html>

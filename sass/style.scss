@@ -1002,30 +1002,7 @@ footer{
     }
   }
 }
-.back-to-top {
-  width: 45px;
-  height: 45px;
-  position: fixed;
-  top: auto;
-  left: auto;
-  right: 15px;
-  bottom: 15px;
-  font-size: 20px;
-  opacity: 0.8;
-  z-index: 9999;
-  cursor: pointer;
-  float: left;
-  background-color: #fdd504;
-  opacity: 0.7;
-  border-radius: 5px;
-  span{
-    padding: 12px;
-  }
-}
 
-.back-to-top:hover {
-  opacity: 1;
-}
 .clearfix:after {
   content: "";
   clear: both;
